@@ -1,0 +1,178 @@
+.track-line {
+  width: 100vw;
+  gap: 2rem;
+}
+
+.track-item {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+p,
+.track-item {
+  font-size: 0.8rem;
+}
+
+.track-item::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  border: 2px solid rgb(180, 180, 180);
+}
+
+.track-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: calc(-100% - 1rem);
+  width: 2.9rem;
+  border: 2px solid rgb(180, 180, 180);
+}
+
+.track-item:last-child::after {
+  border: none;
+}
+
+.completed::before {
+  content: "\2713";
+  display: grid;
+  place-content: center;
+  font-weight: 900;
+  font-size: 0.75em;
+  border: none;
+}
+
+.completed:after,
+.completed:before {
+  color: rgb(252, 252, 252);
+  background-color: rgb(129, 161, 187);
+}
+
+.completed.pending-status::before {
+  background-color: rgb(23, 120, 199);
+}
+
+.completed.preparing-status::before {
+  background-color: rgb(255, 165, 0);
+}
+
+.completed.approved-status::before {
+  background-color: rgb(13, 139, 87);
+}
+
+.completed.rejected-status::before {
+  background-color: rgb(199, 23, 23);
+}
+
+.order-time__info {
+  display: none;
+  margin-left: 1rem;
+}
+
+.btn-add:disabled:hover + .order-time__info {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .track-input input {
+    width: 55%;
+  }
+
+  .track-line {
+    gap: 4rem;
+  }
+
+  .track-item {
+    width: 50px;
+    height: 50px;
+  }
+
+  p,
+  .track-item {
+    font-size: 0.9rem;
+  }
+
+  .track-item::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .track-item::after {
+    right: calc(-100% - 1rem);
+    width: 4.2rem;
+  }
+
+  .completed::before {
+    font-size: 2em;
+  }
+}
+
+/* 
+.track-line {
+  width: 100vw;
+  gap: 4rem !important;
+}
+
+.track-item {
+  position: relative;
+  width: 50px;
+}
+
+.track-item::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  border: 2px solid rgb(180, 180, 180);
+}
+
+.track-item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 35%;
+  right: calc(-100% - 1rem);
+  width: calc(4.2rem);
+  border: 2px solid rgb(180, 180, 180);
+}
+
+.track-item:last-child::after {
+  border: none;
+}
+
+.completed::before {
+  content: '\2713';
+  display: grid;
+  place-content: center;
+  font-weight: 900;
+  font-size: 2rem;
+  border: none;
+}
+
+.completed:after,
+.completed:before {
+  color: rgb(252, 252, 252);
+  background-color: rgb(129, 161, 187);
+}
+
+.completed.pending-status::before {
+  background-color: rgb(23, 120, 199);
+}
+
+.completed.preparing-status::before {
+  background-color: rgb(255, 165, 0);
+}
+
+.completed.approved-status::before {
+  background-color: rgb(13, 139, 87);
+}
+
+.completed.rejected-status::before {
+  background-color: rgb(199, 23, 23);
+} */

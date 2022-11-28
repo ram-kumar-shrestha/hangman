@@ -1,0 +1,9 @@
+@media screen and (max-width: 640px) {
+  .request-table input,
+  .request-table select {
+    max-width: 0 !important;
+  }
+  .request-table {
+    zoom: 0.65;
+  }
+}

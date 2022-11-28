@@ -1,0 +1,11 @@
+.print-btn {
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  right: 0;
+  opacity: 0;
+}
+
+.show-print__btn {
+  opacity: 1;
+}

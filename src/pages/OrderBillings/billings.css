@@ -1,0 +1,26 @@
+.bill h1 {
+  font-size: 0.7rem !important;
+}
+
+.bill-title,
+.bill-subtitle {
+  font-weight: 700;
+}
+
+.gross-total {
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 768px) {
+  .bill h1,
+  table td,
+  table th {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media print {
+  .bill {
+    border: none !important;
+  }
+}

@@ -1,0 +1,81 @@
+.sort {
+  cursor: pointer;
+}
+.approved,
+.active-owner,
+.preparing,
+.cleared,
+.rejected,
+.remaining,
+.incomplete,
+.inactive-owner,
+.pending,
+.defective,
+.loss,
+.expired {
+  color: rgb(241, 241, 241);
+  padding: 0.5em;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.rejected,
+.remaining,
+.incomplete,
+.inactive-owner,
+.loss {
+  background-color: rgb(207, 31, 31);
+}
+
+.pending,
+.expired {
+  background-color: rgb(197, 113, 44);
+}
+
+.defective {
+  background-color: rgb(27, 80, 87);
+}
+
+.active-owner,
+.preparing,
+.cleared {
+  background-color: #30a730;
+}
+
+.approved {
+  background-color: #0d7049;
+}
+
+th {
+  user-select: none;
+}
+
+th,
+td {
+  font-size: 0.9rem;
+}
+
+td:has(button),
+td:nth-child(2) {
+  white-space: nowrap !important;
+}
+
+td > select,
+td > input {
+  min-width: 8rem;
+}
+
+@media print {
+  table td:has(.no-print),
+  table th:has(.no-print) {
+    display: none;
+  }
+
+  table th,
+  table td,
+  td:has(button),
+  td:nth-child(2) {
+    max-width: 10rem;
+    white-space: break-spaces !important;
+  }
+}

@@ -1,0 +1,19 @@
+/* pagination */
+.pagination li,
+.custom-pagination li {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* styles for custom pagination */
+.pagination-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-pagination li {
+  border: 1px solid rgba(14 14 14 / 0.15);
+  padding: 0.5em 1em;
+}

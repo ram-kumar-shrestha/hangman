@@ -1,0 +1,59 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/background.png") no-repeat no-repeat center;
+  display: grid;
+  place-content: center;
+}
+
+.form {
+  width: 90vw;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.664) 2.12%,
+    rgba(255, 254, 254, 0) 98.19%
+  );
+  box-shadow: 15px 15px 40px -10px #1b1919;
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
+
+.form-wrapper {
+  margin: 2rem auto;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-top: 0.5em;
+}
+
+.btn-login {
+  border: none;
+  text-transform: uppercase;
+  margin-left: 0rem !important;
+  padding: 0.5rem 2rem;
+  border-radius: 18px;
+  font-weight: 700;
+}
+
+.login-actions {
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .form {
+    width: 50vw;
+    padding: 1rem;
+  }
+
+  .form-wrapper {
+    max-width: 70%;
+  }
+
+  .login-actions {
+    flex-direction: row !important;
+  }
+}

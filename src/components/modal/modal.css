@@ -1,0 +1,54 @@
+.modal {
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  padding: 2em;
+}
+
+.modal-content {
+  box-shadow: 15px 15px 40px -10px rgba(27, 25, 25, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+}
+
+.modal-header {
+  padding-left: 0;
+}
+
+[modal-type="deleteModal"] .title,
+[modal-type="rejectModal"] .title,
+.close-modal {
+  color: rgba(179, 33, 33, 0.719);
+}
+
+.modal-actions {
+  gap: 1rem;
+}
+
+.close-modal {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.modal-title {
+}
+
+/* form inside modal */
+
+.modal label {
+  font-size: 0.9em !important;
+  font-weight: 600;
+}
+
+#add-finished__items .modal-dialog {
+  min-width: 55vw !important;
+}
+
+#add-raw__items .modal-dialog {
+  min-width: 82vw !important;
+}
+
+#approve-order .modal-dialog {
+  min-width: 60vw !important;
+}

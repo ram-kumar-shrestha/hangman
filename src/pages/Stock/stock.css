@@ -1,0 +1,52 @@
+.quantity.form-control {
+  max-width: 8rem !important;
+}
+
+/* single bill style */
+
+.bill {
+  border: 1px solid rgba(156, 156, 156, 0.4);
+  padding: 1em;
+  margin: 1em auto;
+}
+
+.top-section,
+.bottom-section {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+caption {
+  caption-side: top;
+  color: inherit;
+  font-weight: 600;
+}
+
+.btn-print {
+  padding: 0.5em 2em !important;
+  font-weight: 600;
+}
+
+.table-wrapper table td:last-child {
+  max-width: 200px;
+  line-height: 1.4rem;
+}
+
+.raw-stock__table {
+  max-width: 100%;
+  overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .raw-stock__table {
+    overflow: visible;
+  }
+}
+@media print {
+  .bill {
+    width: 100%;
+  }
+  aside {
+    width: 0;
+  }
+}

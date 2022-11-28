@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.error,
+.danger {
+  color: rgba(231, 31, 31, 0.726);
+  font-size: 0.9em;
+}
+
+.success {
+  color: rgb(32, 192, 112);
+  font-size: 0.9em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
+
+a {
+  color: #313131;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* overwriting bootstrap */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+/* shared disabled btn for dispatcher and outlet owner/employee */
+
+.hide-btn:hover {
+  background-color: rgb(194, 3, 3);
+  border: none;
+  position: relative;
+  color: transparent;
+  transition: all 0.5s;
+}
+
+.hide-btn::after {
+  color: #fff;
+  content: " \2298";
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-35%) translateX(-50%);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+/* giving custom style to nepali date component */
+.nepali-date {
+  min-width: 19rem;
+  /* width: 100%; */
+  background-color: transparent !important;
+}
+
+/* controlling the select style inherited from form-control */
+.responsive-select__form {
+  margin-top: 1rem;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(22, 46, 76, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(22, 46, 76, 0.97);
+  border-radius: 4px;
+}
+
+/* filter style for dispatcher and outlet all orders */
+.filter input[type="Date"] {
+  width: 45% !important;
+}
+
+select.selected {
+  width: 10% !important;
+}
+
+@media screen and (min-width: 768px) {
+  .filter input[type="Date"] {
+    width: 25% !important;
+  }
+
+  .filter select {
+    width: 30%;
+  }
+
+  .responsive-select__form {
+    width: 15rem;
+    margin-top: 0;
+  }
+}
+
+/* report print styles */
+@media print {
+  .no-print {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+  .print-content {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  td,
+  th {
+    font-size: 1rem !important;
+  }
+}

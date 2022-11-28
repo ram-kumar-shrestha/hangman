@@ -1,0 +1,13 @@
+.password-container {
+  position: relative;
+}
+
+.show-psswd {
+  font-size: 1.4em;
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+}
